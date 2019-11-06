@@ -77,7 +77,7 @@ var checkWins = function(){
         initGame();
     }
 else if(currentScore === targetNumber){
-    
+
     alert("you won");
     console.log("you won");
     win++;
@@ -87,7 +87,6 @@ else if(currentScore === targetNumber){
     }
 };
 
-//reinitialize game
 initGame();
 
 //on-click for the crystal images
