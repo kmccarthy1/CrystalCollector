@@ -65,9 +65,9 @@ var initGame = function(){
         checkWins();
     }
 
-//check to see if you have matched the target score thereby winning ...else losing
+//check to see if your score matches target score
 var checkWins = function(){
-   // var lose = 0;
+
     if(currentScore > targetNumber){
         alert("you lost");
         console.log("you lost");
@@ -77,7 +77,7 @@ var checkWins = function(){
         initGame();
     }
 else if(currentScore === targetNumber){
-   // var win = 0;
+    
     alert("you won");
     console.log("you won");
     win++;
