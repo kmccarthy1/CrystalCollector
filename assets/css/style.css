@@ -1,0 +1,72 @@
+.jumbotron{
+    height: 250px;
+    color: white;
+}
+
+#instructions{
+    color: white;
+}
+
+#targetScore{
+    background-color: steelblue;
+    color: white;
+}
+
+#score{
+    background-color: purple;
+    color: white;
+}
+
+#crystals{
+    background-color: green;
+    color: white;
+}
+
+#wins{
+    background-color: black;
+    color: white;
+}
+
+#lose{
+    background-color: black;
+    color: white;
+}
+
+#background{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+.crystal {
+    display: inline;
+}
+
+.crystal-image{
+    display: inline;
+}
+
+#blue{
+    height: 125px;
+    width: 100px;
+}
+
+#green{
+    height: 100px;
+    width: 150px;
+}
+
+#purple{
+    height: 100px;
+    width: 125px;
+}
+
+#orange{
+    height: 100px;
+    width: 150px;
+}
+
+.card-body{
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+}
