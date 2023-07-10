@@ -1,6 +1,12 @@
 .jumbotron{
     height: 250px;
-    color: white;
+    color: black;
+    /* opacity: 0.5; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#background {
+
 }
 
 #instructions{
@@ -32,8 +38,10 @@
     color: white;
 }
 
-#background{
-    background-image: url("../images/background.jpg");
+ body{
+    background-image: url("../images/cave.png");
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 

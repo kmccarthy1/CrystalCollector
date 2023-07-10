@@ -41,9 +41,9 @@ var initGame = function(){
         currentScore = 0;
         //get random number for the target score
         targetNumber = getRandom(19, 120);
-        console.log(targetNumber);
+        // console.log(targetNumber);
         $(".targetScore").html(targetNumber);
-        $(".userScore").html(currentScore);
+        $("#userScore").html(0);
 };
 
 //get random number for each crystal
@@ -64,26 +64,27 @@ var initGame = function(){
 
         checkWins();
     }
+    
+    var updateWinsAndLosses = function(){
+        $("#losses").html(lose);
+        $("#win").html(win);
+    };
 
 //check to see if your score matches target score
 var checkWins = function(){
-
     if(currentScore > targetNumber){
         alert("you lost");
         console.log("you lost");
         lose++;
-        $("#losses").html(lose);
-        //restart game
+        updateWinsAndLosses(); // Update wins and losses
         initGame();
     }
-else if(currentScore === targetNumber){
-
-    alert("you won");
-    console.log("you won");
-    win++;
-    $("#win").html(win);
-    //restart game
-    initGame();
+    else if(currentScore === targetNumber){
+        alert("you won");
+        console.log("you won");
+        win++;
+        updateWinsAndLosses(); // Update wins and losses
+        initGame();
     }
 };
 
